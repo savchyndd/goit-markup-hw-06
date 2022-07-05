@@ -500,24 +500,54 @@
               <use href="./images/icons.svg#icon-close-modal"></use>
             </svg>
           </button>
-          <h2 class="modal-title"></h2>
+          <h2 class="modal-title">Залишіть свої дані, ми вам передзвонимо</h2>
           <form class="modal-form-oder">
-            <label for="name-oder">Ім'я</label>
-            <input type="text" name="name" id="name-oder" />
-            <label for="tel-oder">Телефон</label>
-            <input type="tel" name="tel" id="tel-oder" />
-            <label for="email-oder">Пошта</label>
-            <input type="email" name="email" id="email-oder" />
-            <label for="decr-oder">Коментарій</label>
-            <input type="" name="decr" id="decr-oder" />
-            <label for="checkbox-oder">
-              Погоджуюся з розсилкою та приймаю<a href="#" class="checkbox-link"
-                >Умови договору</a
-              ></label
-            >
-            <input type="checkbox" name="checkbox" id="checkbox-oder" />
-
-            <button type="submit">Відправити</button>
+            <div class="form-field">
+              <label class="oder-label" for="name-oder">Ім'я</label>
+              <div class="form-field-input">
+                <input class="form-input" type="text" name="name" id="name-oder" />
+                <svg class="modal-icon" width="18px" height="18px" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-person-modal"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="oder-label" for="tel-oder">Телефон</label>
+              <div class="form-field-input">
+                <input class="form-input" type="tel" name="tel" id="tel-oder" />
+                <svg class="modal-icon" width="18px" height="18px" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-phone-modal"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="oder-label" for="email-oder">Пошта</label>
+              <div class="form-field-input">
+                <input class="form-input" type="email" name="email" id="email-oder" />
+                <svg class="modal-icon" width="18px" height="18px" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-email-modal"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="oder-label" for="decr-oder">Коментарій</label>
+              <textarea
+                class="oder-textarea"
+                name="decr"
+                id="decr-oder"
+                cols="30"
+                rows="10"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div class="form-privacy">
+              <input class="oder-privacy-imput" type="checkbox" name="checkbox" id="privacy-oder" />
+              <label class="oder-privacy-label" for="privacy-oder">
+                Погоджуюся з розсилкою та приймаю
+                <a href="#" class="oder-privacy-link">Умови договору</a></label
+              >
+            </div>
+            <button class="modal-btn" type="submit">Відправити</button>
           </form>
         </div>
       </div>
@@ -587,7 +617,7 @@
             />
             <button type="submit" class="newsletter-btn">
               Підписатися
-              <svg class="newsletter-btn-icon" width="24" height="24">
+              <svg class="newsletter-btn-icon" width="24" height="24" aria-hidden="true">
                 <use href="./images/icons.svg#icon-send-btn"></use>
               </svg>
             </button>
