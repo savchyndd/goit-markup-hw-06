@@ -538,6 +538,8 @@ img {
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -549,7 +551,7 @@ img {
   text-align: center;
 }
 
-.oder-label {
+.order-label {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -564,6 +566,8 @@ img {
 }
 .form-field-input {
   position: relative;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input {
   width: 100%;
@@ -574,6 +578,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
   position: absolute;
@@ -585,7 +591,11 @@ img {
 .form-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
-.oder-textarea {
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+.order-textarea {
   display: block;
   resize: none;
 
@@ -605,8 +615,13 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-}
 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-textarea:hover,
+.order-textarea:focus {
+  border-color: var(--accent-color);
+}
 .form-privacy {
   display: flex;
   align-items: center;
@@ -614,18 +629,18 @@ img {
 
   margin-bottom: 30px;
 }
-.oder-privacy-imput {
+.order-privacy-imput {
   border-color: var(--header-color);
 
   cursor: pointer;
 }
-.oder-privacy-label {
+.order-privacy-label {
   margin-left: 8px;
 
   font-size: 14px;
   line-height: 1.71;
 }
-.oder-privacy-link {
+.order-privacy-link {
   color: var(--accent-color);
   text-decoration: underline;
   cursor: pointer;
@@ -745,7 +760,14 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 
   cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.newsletter-input:hover,
+.newsletter-input:focus {
+  border-color: var(--accent-color);
+}
+
 .newsletter-btn {
   width: 200px;
   height: 50px;
@@ -771,4 +793,6 @@ footer {
 .newsletter-btn-icon {
   margin-left: 10px;
   fill: var(--white-color);
+}
+.newsletter-btn:focus {
 }
