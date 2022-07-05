@@ -743,6 +743,8 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
+
+  cursor: pointer;
 }
 .newsletter-btn {
   width: 200px;
@@ -763,6 +765,8 @@ footer {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  cursor: pointer;
 }
 .newsletter-btn-icon {
   margin-left: 10px;
