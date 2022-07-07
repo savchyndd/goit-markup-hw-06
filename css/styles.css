@@ -196,16 +196,19 @@ img {
 }
 .hero-btn {
   padding: 10px 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  cursor: pointer;
+
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
+
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -506,7 +509,8 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -529,9 +533,11 @@ img {
   top: 8px;
   right: 8px;
 
-  padding: 6px;
-  max-width: 30px;
-  max-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 
   background: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -547,11 +553,17 @@ img {
 }
 
 .modal-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
   font-size: 20px;
   text-align: center;
+
+  color: var(--header-color);
 }
 
 .order-label {
+  display: block;
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -778,13 +790,13 @@ footer {
   font-size: 16px;
   line-height: 1.25;
 
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--bgr-secondary-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.6);
 
   cursor: pointer;
-
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .newsletter-input:hover,
